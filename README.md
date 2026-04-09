@@ -22,7 +22,7 @@ human‑aligned decision support
 This system does not replace responders.
 It coordinates them, amplifies them, and reduces preventable loss of life.
 2. Philosophy & Foundation
-Your previous AI papers established several core principles:
+Previous AI papers established several core principles:
 AI must be human‑aligned, bias‑resistant, and transparent.
 Context gradients matter more than predictions.
 Lineage of information is non‑negotiable.
