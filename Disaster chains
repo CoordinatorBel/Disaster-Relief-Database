@@ -1,0 +1,176 @@
+A disaster is almost never a single, isolated incident.
+It is a cascade of interconnected events in which one hazard triggers additional hazards, system failures, or operational degradations.
+
+The “main disaster” is only the initial node — not the full scope of severity or impact.
+
+Disaster chaining exists to capture these cascading relationships so that response systems can:
+
+fetch the correct situational data in real time,
+
+identify secondary and tertiary hazards before they occur,
+
+anticipate operational impacts across infrastructure, health, and logistics,
+
+and support faster, more accurate emergency deployment.
+
+By modeling disasters as causal chains rather than isolated events, the system provides a more complete and actionable picture of emerging conditions.
+
+This is the structural graph, not the narrative.
+Below are the current disaster chains.
+(Not all possible chains are represented at the time of this document’s publication.)
+
+Disaster Cascade DAG (Outbound Edges by Node)
+1. Volcanic Eruption – Outbound Edges
+Volcanic eruption → [Magma movement / fault stress] → Earthquake
+
+Volcanic eruption → [Lava ignition / ash ignition] → Wildfire
+
+Volcanic eruption → [Ash plume / PM2.5] → Air‑quality hazard
+
+Volcanic eruption → [Pyro‑convection] → Severe thunderstorm
+
+Volcanic eruption → [Ash loading] → Structural collapse
+
+Volcanic eruption → [Lava flow] → Infrastructure damage
+
+Volcanic eruption → [Ashfall contamination] → Water contamination
+
+Volcanic eruption → [Pyroclastic flow] → Mass‑casualty event
+
+2. Earthquake – Outbound Edges
+Earthquake → [Seafloor displacement] → Tsunami
+
+Earthquake → [Slope destabilization] → Landslide
+
+Earthquake → [Liquefaction] → Infrastructure collapse
+
+Earthquake → [Pipeline rupture] → Hazardous material release
+
+Earthquake → [Dam/levee stress] → Dam failure
+
+Earthquake → [Grid damage] → Power outage
+
+Earthquake → [Road/bridge collapse] → Transportation failure
+
+Earthquake → [Building collapse] → Mass‑casualty event
+
+3. Tsunami – Outbound Edges
+Tsunami → [Coastal inundation] → Flooding
+
+Tsunami → [Industrial washout] → Chemical contamination
+
+Tsunami → [Sewage system failure] → Disease outbreak
+
+Tsunami → [Port destruction] → Supply chain disruption
+
+Tsunami → [Soil erosion] → Landslide
+
+4. Flood – Outbound Edges
+Flood → [Sewage overflow] → Disease outbreak
+
+Flood → [Industrial inundation] → Chemical spill
+
+Flood → [Soil saturation] → Landslide
+
+Flood → [Bridge washout] → Transportation failure
+
+Flood → [Dam overtopping] → Dam failure
+
+Flood → [Crop destruction] → Food insecurity
+
+5. Landslide – Outbound Edges
+Landslide → [River blockage] → Upstream flooding
+
+Landslide → [Pipeline rupture] → Hazardous material release
+
+Landslide → [Road burial] → Access loss
+
+Landslide → [Powerline damage] → Local grid failure
+
+6. Sinkhole – Outbound Edges
+Sinkhole → [Structural collapse] → Mass‑casualty event
+
+Sinkhole → [Water main rupture] → Local flooding
+
+Sinkhole → [Gas line rupture] → Explosion
+
+7. Wildfire – Outbound Edges
+Wildfire → [Vegetation loss] → Post‑fire landslide
+
+Wildfire → [Smoke plume] → Air‑quality hazard
+
+Wildfire → [Transmission corridor damage] → Grid failure
+
+Wildfire → [Infrastructure loss] → Displacement
+
+Wildfire → [Pyro‑convection] → Thunderstorm
+
+8. Severe Thunderstorm – Outbound Edges
+Thunderstorm → [Lightning] → Wildfire
+
+Thunderstorm → [Extreme rainfall] → Flash flooding
+
+Thunderstorm → [Wind shear] → Tornado
+
+Thunderstorm → [Hail impact] → Infrastructure damage
+
+9. Tornado – Outbound Edges
+Tornado → [Industrial damage] → Hazardous material release
+
+Tornado → [Transmission line damage] → Power outage
+
+Tornado → [Debris impact] → Structural collapse
+
+10. Hurricane / Cyclone – Outbound Edges
+Hurricane → [Storm surge] → Coastal flooding
+
+Hurricane → [Extreme rainfall] → Inland flooding
+
+Hurricane → [Wind damage] → Grid failure
+
+Hurricane → [Infrastructure destruction] → Displacement
+
+Hurricane → [Port/airport damage] → Supply chain disruption
+
+11. Drought – Outbound Edges
+Drought → [Vegetation die‑off] → Wildfire
+
+Drought → [Water scarcity] → Conflict
+
+Drought → [Crop failure] → Food insecurity
+
+Drought → [Hydropower reduction] → Grid stress
+
+12. Disease Outbreak – Outbound Edges
+Disease outbreak → [Healthcare overload] → Secondary mortality
+
+Disease outbreak → [Workforce reduction] → Supply chain disruption
+
+Disease outbreak → [Sanitation breakdown] → Secondary disease
+
+Disease outbreak → [Border closures] → Economic disruption
+
+13. Technological / Industrial – Outbound Edges
+Chemical spill → [Water contamination] → Public health crisis
+
+Nuclear incident → [Evacuation] → Long‑term displacement
+
+Grid failure → [Water system failure] → Sanitation breakdown
+
+Grid failure → [Communication outage] → Coordination failure
+
+14. Societal / Systemic – Outbound Edges
+Civil unrest → [Infrastructure damage] → Service disruption
+
+Civil unrest → [Supply chain interference] → Resource scarcity
+
+Governance overload → [Response failure] → Cascading mortality
+
+Closing Statement
+As this model demonstrates, every disaster contains multiple variables already in motion.
+What appears to be a single event is, in reality, a domino sequence of hazards, failures, and cascading impacts.
+
+By mapping these chains explicitly — hazard → linker → downstream hazard — we acknowledge the true complexity of disaster behavior and create the foundation for systems that can act with clarity instead of guesswork.
+
+It is our goal to build a system capable of saving lives during an event and reducing suffering in the aftermath by delivering real‑time, multi‑hazard awareness.
+Through accurate disaster chaining, we aim to give responders, agencies, and communities the ability to see not just what has happened, but what is likely to happen next — and act before the cascade accelerates.
