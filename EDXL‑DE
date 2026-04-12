@@ -1,0 +1,34 @@
+Below is a clean, standards‑compliant EDXL‑DE envelope that any system can wrap any payload in.
+
+Code
+<EDXLDistribution xmlns="urn:oasis:names:tc:emergency:EDXL:DE:1.0">
+    <distributionID>{UUID}</distributionID>
+    <senderID>{YourSystemIdentifier}</senderID>
+    <dateTimeSent>{ISO8601}</dateTimeSent>
+    <distributionStatus>Actual</distributionStatus>
+    <distributionType>Report</distributionType>
+
+    <recipient>
+        <explicitAddress>
+            <scheme>urn:edxl:target:agency</scheme>
+            <address>{TargetAgency}</address>
+        </explicitAddress>
+    </recipient>
+
+    <contentObject>
+        <contentDescription>{IRD | RRD | Cascade | Lineage}</contentDescription>
+        <incidentID>{IncidentIdentifier}</incidentID>
+
+        <contentXML>
+            <!-- Insert NIEM or system-specific XML payload here -->
+            {PayloadXML}
+        </contentXML>
+    </contentObject>
+</EDXLDistribution>
+Notes:
+
+Fully compliant with EDXL‑DE 1.0.
+
+Payload can be NIEM IEPD XML or your internal schema.
+
+Supports multi‑agency routing.
