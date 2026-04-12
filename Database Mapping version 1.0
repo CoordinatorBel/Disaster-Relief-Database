@@ -1,0 +1,128 @@
+1. Component → Standard Mapping (Operational, Not Marketing)
+Below is the mapping for the core components of the coordination‑intelligence system as it exists today:
+lineage engine
+gravitational alignment model
+cascade logic / disaster‑chain model
+context‑gradient assessment
+IRD/RRD flows
+human‑command enforcement
+data ingestion + message normalization
+situational synthesis layer
+Each mapped to ICS, NIMS, CAP, EDXL, NIEM.
+A. Lineage Engine (Data Provenance + Oversight)
+ICS:
+Aligns with ICS‑214 (Activity Log) and ICS‑202/203 documentation lineage.
+Supports chain‑of‑command traceability.
+NIMS:
+Aligns with NIMS “Resource Tracking” and “Information Management” requirements.
+Provides auditability required for multi‑agency operations.
+CAP:
+No direct equivalent. CAP has no concept of lineage or provenance.
+Your system extends beyond CAP.
+EDXL:
+Partial alignment with EDXL‑DE metadata blocks (sender, distribution, confidentiality).
+No native support for multi‑hop lineage.
+NIEM:
+Aligns with NIEM’s “Metadata” and “Audit Trail” components.
+Can be expressed via IEPD extensions.
+Gap/Extension:
+Lineage is a novel capability not present in any standard.
+Must be expressed as an extension in NIEM/EDXL.
+B. Gravitational Alignment Model (System Stability + Drift Suppression)
+ICS:
+No equivalent. ICS assumes human stability, not system stability.
+NIMS:
+Aligns conceptually with NIMS “Command and Coordination” doctrine (ensuring systems don’t override human authority).
+But no technical equivalent.
+CAP:
+No equivalent.
+EDXL:
+No equivalent.
+NIEM:
+No equivalent.
+Gap/Extension:
+This is a pure extension.
+Must be documented as a system‑internal safety mechanism, not a standards‑mapped function.
+C. Cascade Logic / Disaster‑Chain Model
+ICS:
+Aligns with ICS‑215 (Operational Planning Worksheet) and ICS‑209 (Incident Status Summary).
+ICS does not model cascades; it documents them.
+NIMS:
+Aligns with NIMS “Situational Assessment” and “Operational Coordination.”
+NIMS does not provide cascade modeling.
+CAP:
+CAP cannot express multi‑node cascades.
+Only single‑event alerts.
+EDXL:
+Partial alignment with EDXL‑RM (Resource Messaging) and EDXL‑SitRep.
+No cascade semantics.
+NIEM:
+Can represent cascades via structured relationships, but no predefined schema.
+Gap/Extension:
+Cascade logic is a major innovation.
+Must be represented as NIEM extensions or EDXL‑DE payloads.
+D. Context‑Gradient Assessment (Real‑Time Severity + Drift Control)
+ICS:
+Aligns with ICS‑209 severity indicators.
+ICS does not compute gradients.
+NIMS:
+Aligns with NIMS “Situational Assessment” requirements.
+No computational model.
+CAP:
+CAP has severity/urgency/certainty fields but no gradients.
+EDXL:
+EDXL‑SitRep supports severity but not dynamic gradients.
+NIEM:
+Can encode gradients as structured numeric fields.
+Gap/Extension:
+Gradient logic is an extension beyond all standards.
+E. IRD / RRD Flows (Initial + Recurring Reporting)
+ICS:
+IRD aligns with ICS‑201/202/209.
+RRD aligns with ICS‑209 updates and planning cycles.
+NIMS:
+Fully aligned with NIMS reporting cadence.
+CAP:
+Not aligned; CAP is alerting, not reporting.
+EDXL:
+Aligns with EDXL‑SitRep and EDXL‑DE envelopes.
+NIEM:
+Can be expressed as NIEM IEPDs.
+Gap/Extension:
+None. This is a direct alignment area.
+F. Human‑Command Enforcement Layer
+ICS:
+Direct alignment with ICS chain‑of‑command doctrine.
+Supports “AI cannot issue orders.”
+NIMS:
+Aligns with NIMS “Unity of Command” and “Management by Objectives.”
+CAP / EDXL / NIEM:
+Not applicable; these are data standards, not authority standards.
+Gap/Extension:
+Enforcement logic is an internal system safeguard.
+G. Data Ingestion + Message Normalization
+ICS:
+Aligns with ICS forms but requires mapping.
+NIMS:
+Aligns with NIMS “Information and Intelligence Management.”
+CAP:
+Direct alignment for alert ingestion.
+EDXL:
+Direct alignment for RM, SitRep, DE.
+NIEM:
+Direct alignment via IEPD‑based normalization.
+Gap/Extension:
+None. This is a standards‑aligned component.
+H. Situational Synthesis Layer (Cross‑Standard Fusion)
+ICS:
+Aligns with ICS‑209 and planning cycle.
+NIMS:
+Aligns with NIMS “Situational Assessment.”
+CAP:
+CAP is an input, not a synthesis tool.
+EDXL:
+EDXL‑SitRep is a partial match.
+NIEM:
+Can encode synthesized products.
+Gap/Extension:
+Synthesis logic is an internal capability.
