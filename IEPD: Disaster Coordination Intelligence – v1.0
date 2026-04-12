@@ -1,0 +1,90 @@
+IEPD: Disaster Coordination Intelligence – v1.0
+1. Overview
+Purpose: Represent lineage, cascades, gradients, and IRD/RRD reports in NIEM‑compliant form.
+
+Scope: Multi‑agency disaster coordination.
+
+2. Artifacts
+2.1. IEPD Package Structure
+Code
+/IEPD/
+  /documentation/
+  /schemas/
+    /extension/
+    /subset/
+  /examples/
+  /constraints/
+  /catalog.xml
+3. NIEM Subset Schema
+Includes only required NIEM core components:
+
+nc:PersonType
+
+nc:OrganizationType
+
+nc:IncidentType
+
+nc:ActivityType
+
+nc:LocationType
+
+nc:MetadataType
+
+nc:MeasureType
+
+4. Extension Schema
+Defines system‑specific structures:
+
+4.1. LineageExtension
+lineage:Source
+
+lineage:Transformation
+
+lineage:Confidence
+
+lineage:ChainStep
+
+lineage:HumanOverrideFlag
+
+4.2. CascadeExtension
+cascade:Node
+
+cascade:Trigger
+
+cascade:Impact
+
+cascade:PropagationPath
+
+4.3. GradientExtension
+gradient:SeverityScore
+
+gradient:Trend
+
+gradient:Volatility
+
+4.4. IRD/RRD Structures
+report:InitialReport
+
+report:RecurringReport
+
+report:OperationalPeriod
+
+report:ResourceStatus
+
+5. Constraints
+Schematron rules enforcing human‑command enforcement fields.
+
+Validation rules for lineage completeness.
+
+Constraints for cascade node relationships.
+
+6. Examples
+Provide sample XML instances for:
+
+IRD
+
+RRD
+
+Cascade chain
+
+Lineage chain
