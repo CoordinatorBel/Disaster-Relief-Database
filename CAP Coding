@@ -1,0 +1,65 @@
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+    <identifier>{UUID}</identifier>
+    <sender>{OriginatingAgencyIdentifier}</sender>
+    <sent>{ISO8601_Timestamp}</sent>
+    <status>Actual</status> <!-- Actual | Exercise | System | Test | Draft -->
+    <msgType>Alert</msgType> <!-- Alert | Update | Cancel | Ack | Error -->
+    <source>{SourceSystemOrFeed}</source>
+    <scope>Public</scope> <!-- Public | Restricted | Private -->
+
+    <info>
+        <category>{Geo | Met | Safety | Security | Rescue | Fire | Health | Env | Transport | Infra | CBRNE | Other}</category>
+        <event>{EventName}</event>
+        <responseType>{Shelter | Evacuate | Prepare | Execute | Avoid | Monitor | Assess | None}</responseType>
+        <urgency>{Immediate | Expected | Future | Past | Unknown}</urgency>
+        <severity>{Extreme | Severe | Moderate | Minor | Unknown}</severity>
+        <certainty>{Observed | Likely | Possible | Unlikely | Unknown}</certainty>
+
+        <senderName>{AgencyName}</senderName>
+        <headline>{ShortHeadline}</headline>
+        <description>{FullEventDescription}</description>
+        <instruction>{PublicInstructions}</instruction>
+
+        <area>
+            <areaDesc>{GeographicDescription}</areaDesc>
+            <polygon>{lat,lon lat,lon lat,lon}</polygon> <!-- optional -->
+            <circle>{lat,lon radius}</circle> <!-- optional -->
+            <geocode>
+                <valueName>SAME</valueName>
+                <value>{FIPS_Code}</value>
+            </geocode>
+        </area>
+
+        <parameter>
+            <valueName>incidentID</valueName>
+            <value>{InternalIncidentIdentifier}</value>
+        </parameter>
+
+        <parameter>
+            <valueName>sourceFeed</valueName>
+            <value>{FeedNameOrURL}</value>
+        </parameter>
+    </info>
+</alert>
+
+
+1. Required Fields for Valid CAP
+identifier
+sender
+sent
+status
+msgType
+scope
+At least one <info> block
+Ingestion layer should reject or quarantine alerts missing these.
+2. Fields Your System Should Extract Immediately
+Severity / Urgency / Certainty → feeds your context‑gradient engine
+Event → maps to your disaster‑chain node
+Area → geospatial normalization
+Parameters → lineage anchors, feed metadata, incident correlation
+3. Fields to Ignore or Down‑weight
+CAP often contains:
+vague descriptions
+inconsistent geocodes
+non‑standard parameter names
+Normalization layer should sanitize these.
