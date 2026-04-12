@@ -1,0 +1,12 @@
++------------------------------+--------+--------+--------+--------+--------+------------------------------+
+| System Component             |  ICS   |  NIMS  |  CAP   | EDXL   | NIEM   | Notes / Gaps / Extensions    |
++------------------------------+--------+--------+--------+--------+--------+------------------------------+
+| Lineage Engine               |  ✓     |  ✓     |   ✗    |  ~     |  ✓     | Novel capability; extend     |
+| Gravitational Alignment      |   ✗    |  ~     |   ✗    |   ✗    |   ✗    | Pure extension               |
+| Cascade Logic                |  ~     |  ~     |   ✗    |  ~     |  ~     | Major innovation             |
+| Context Gradients            |  ~     |  ~     |   ~    |  ~     |  ✓     | Extension beyond standards   |
+| IRD / RRD Reporting          |  ✓     |  ✓     |   ✗    |  ✓     |  ✓     | Fully aligned                |
+| Human Command Enforcement    |  ✓     |  ✓     |   ✗    |   ✗    |   ✗    | Internal safeguard           |
+| Data Normalization Layer     |  ~     |  ✓     |   ✓    |  ✓     |  ✓     | Standards‑aligned            |
+| Situational Synthesis Layer  |  ~     |  ✓     |   ✗    |  ~     |  ✓     | Internal logic               |
++------------------------------+--------+--------+--------+--------+--------+------------------------------+
