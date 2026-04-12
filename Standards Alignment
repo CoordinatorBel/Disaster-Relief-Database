@@ -1,0 +1,99 @@
+Standards Alignment Overview
+This system is designed to operate inside existing emergency‑management doctrine.
+It aligns with ICS, NIMS, CAP, EDXL, and NIEM without replacing or overriding any of them.
+Where standards lack required structures (e.g., cascades, lineage), the system extends them without breaking interoperability.
+
+Component‑to‑Standard Mapping
+Lineage Engine
+ICS: Aligns with ICS‑214 (Activity Log) and ICS‑202/203 documentation lineage.
+
+NIMS: Aligns with NIMS “Information Management” and “Resource Tracking.”
+
+CAP: No equivalent (CAP has no provenance model).
+
+EDXL: Partial alignment with EDXL‑DE metadata.
+
+NIEM: Aligns with NIEM metadata/audit components.
+
+Notes: Novel capability; requires NIEM/EDXL extension.
+
+Gravitational Alignment Model
+ICS/NIMS: Conceptual alignment with chain‑of‑command and unity‑of‑command.
+
+CAP/EDXL/NIEM: No equivalents.
+
+Notes: Pure internal safety mechanism.
+
+Cascade Logic (Disaster‑Chain Model)
+ICS: Aligns with ICS‑209/215 documentation of cascading impacts.
+
+NIMS: Aligns with situational assessment doctrine.
+
+CAP: Cannot express cascades.
+
+EDXL: Partial alignment with SitRep/RM.
+
+NIEM: Representable via structured relationships.
+
+Notes: Major innovation; requires schema extension.
+
+Context‑Gradient Assessment
+ICS: Aligns with ICS‑209 severity indicators.
+
+NIMS: Aligns with situational assessment.
+
+CAP: Severity/urgency/certainty fields only (no gradients).
+
+EDXL: Severity fields only.
+
+NIEM: Can encode gradients.
+
+Notes: Extension beyond all standards.
+
+IRD/RRD Reporting
+ICS: Direct alignment with ICS‑201/202/209.
+
+NIMS: Fully aligned with reporting cadence.
+
+CAP: Not applicable.
+
+EDXL: Aligns with SitRep and DE envelopes.
+
+NIEM: Expressible via IEPDs.
+
+Notes: Fully standards‑aligned.
+
+Human‑Command Enforcement
+ICS: Direct alignment with chain‑of‑command doctrine.
+
+NIMS: Aligns with unity‑of‑command and management by objectives.
+
+CAP/EDXL/NIEM: Not applicable.
+
+Notes: Internal safeguard.
+
+Data Ingestion + Normalization
+ICS: Maps ICS forms into structured fields.
+
+NIMS: Aligns with information management.
+
+CAP: Direct alignment for alert ingestion.
+
+EDXL: Direct alignment for RM/SitRep/DE.
+
+NIEM: Direct alignment via IEPDs.
+
+Notes: Standards‑aligned.
+
+Situational Synthesis Layer
+ICS: Aligns with ICS‑209 and planning cycle.
+
+NIMS: Aligns with situational assessment.
+
+CAP: Not applicable.
+
+EDXL: Partial alignment with SitRep.
+
+NIEM: Representable.
+
+Notes: Internal logic.
